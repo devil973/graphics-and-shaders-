@@ -24,3 +24,10 @@ int fibonacci(int n)
         return -1;
     }
 }
+int power(int i, int j){
+    if(j==1) return i;
+    else if(j==0) return 1;
+    else if (j<0) return -1;
+    else return power(i,j-1);
+}
+
