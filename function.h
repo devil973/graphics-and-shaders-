@@ -24,10 +24,19 @@ int fibonacci(int n)
         return -1;
     }
 }
+
 int power(int i, int j){
     if(j==1) return i;
     else if(j==0) return 1;
     else if (j<0) return -1;
     else return power(i,j-1);
+}
+
+int isPrime(int n){
+  for(int i = 2; i < n/2; i++){
+    if(n%i==0) return 0;
+    else continue; 
+  }
+  return 1;
 }
 
