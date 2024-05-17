@@ -2,12 +2,17 @@
 #include<math.h>
 #include<ctype.h>
 int factorial(int n){
+    if(isdigit(n)){
     if(n<0) return -1;
     if(n==0) return 1;
     else return n*factorial(n-1);
-}    
-int fibonacci(int n)
-{
+}
+else return -1
+}
+
+int fibonacci(int n){
+if(isdigit(n)){
+
     if (n == 0)
     {
         return 0;
@@ -24,13 +29,18 @@ int fibonacci(int n)
     {
         return -1;
     }
-}
 
+}
+else return -1;
+}
 int power(int i, int j){
+    if(isdigit(i)==1&&isdigit(j)==1){
     if(j==1) return i;
     else if(j==0) return 1;
     else if (j<0) return -1;
     else return power(i,j-1);
+}
+else return -1
 }
 
 int isPrime(int n){
