@@ -40,8 +40,8 @@ float testcase_prime(){
     if(factorial(s)==-1) marks++;
     return marks*100/12;
  }
-int main(){
-    int j=0;
+float  testcase_power(){
+    float j=0;
     if(power(2,3)==8) j++;
     else if(power(2,-1)==0.5)  j++;
     else if(power(-2,-3)==-0.125) j++;
