@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+#include<ctype.h>
 int factorial(int n){
     if(n<0) return -1;
     if(n==0) return 1;
@@ -33,10 +34,17 @@ int power(int i, int j){
 }
 
 int isPrime(int n){
+  if(isdigit(n)){
+  if(n<0) return -1;
+  else{
   for(int i = 2; i < n/2; i++){
     if(n%i==0) return 0;
     else continue; 
   }
   return 1;
 }
+}
+else return -1;
+}
+
 
