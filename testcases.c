@@ -24,6 +24,22 @@ float testcase_prime(){
     if(isPrime(s)==-1) marks++;
     return marks*100/21;
  }
+ float testcase_factorial(){
+    float marks = 0;
+    if(factorial(-2)==-1) marks++;
+    if(factorial(2)==2) marks++;
+    if(factorial(3)==6) marks++;
+    if(factorial(4)==24) marks++;
+    if(factorial(7)==5040) marks++;
+    if(factorial(8)==40320) marks++;
+    if(factorial(9)==362880) marks++;
+    if(factorial(-50)==-1) marks++;
+    if(factorial(c)==-1) marks++;
+    if(factorial(d)==-1) marks++;
+    if(factorial(n)==-1) marks++;
+    if(factorial(s)==-1) marks++;
+    return marks*100/12;
+ }
 int main(){
     int j=0;
     if(power(2,3)==8) j++;
