@@ -1,4 +1,29 @@
 #include"function.h"
+float testcase_prime(){
+    float marks = 0;
+    if(isPrime(-2)==-1) marks++;
+    if(isPrime(2)==1) marks++;
+    if(isPrime(3)==1) marks++;
+    if(isPrime(4)==0) marks++;
+    if(isPrime(27)==0) marks++;
+    if(isPrime(11)==1) marks++;
+    if(isPrime(23)==1) marks++;
+    if(isPrime(10000)==0) marks++;
+    if(isPrime(258)==0) marks++;
+    if(isPrime(7)==1) marks++;
+    if(isPrime(13)==1) marks++;
+    if(isPrime(14)==0) marks++;
+    if(isPrime(-50)==-1) marks++;
+    if(isPrime(57)==1) marks++;
+    if(isPrime(99999)==0) marks++;
+    if(isPrime(98)==0) marks++;
+    if(isPrime(c)==-1) marks++;
+    if(isPrime(d)==-1) marks++;
+    if(isPrime(n)==-1) marks++;
+    if(isPrime(50)==1) marks++;
+    if(isPrime(s)==-1) marks++;
+    return marks*100/21;
+ }
 int main(){
     int j=0;
     if(power(2,3)==8) j++;
@@ -22,3 +47,4 @@ int main(){
     else if(power(2.3,9)==1801.152661463) j++;
     else if(power(2,23)==8388608) j++;
     return j;
+}
