@@ -64,3 +64,27 @@ float  testcase_power(){
     else if(power(2,23)==8388608) j++;
     return j;
 }
+int testcase_fibonacci(){
+    int marks=0;
+    if(fibonacci(1)==1)marks++;
+    if(fibonacci(0)==0)marks++;
+    if(fibonacci(2)==1)marks++;
+    if(fibonacci(3)==2)marks++;
+    if(fibonacci(4)==3)marks++;
+    if(fibonacci(5)==5)marks++;
+    if(fibonacci(6)==8)marks++;
+    if(fibonacci(7)==13)marks++;
+    if(fibonacci(-1)==-1)marks++;
+    if(fibonacci(-2)==-1)marks++;
+    if(fibonacci(-3)==-1)marks++;
+    if(fibonacci(-4)==-1)marks++;
+    if(fibonacci(3.3)==-1)marks++;
+    if(fibonacci(4.5)==-1)marks++;
+    if(fibonacci(5.6)==-1)marks++;
+    if(fibonacci(6.8)==-1)marks++;
+    if(fibonacci(7.3)==-1)marks++;
+    if(fibonacci(-0.8)==-1)marks++;
+    if(fibonacci(8)==21)marks++;
+    if(fibonacci(9)==34)marks++;
+    return marks*5;
+}
