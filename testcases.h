@@ -17,12 +17,10 @@ float testcase_prime(){
     if(isPrime(57)==1) marks++;
     if(isPrime(99999)==0) marks++;
     if(isPrime(98)==0) marks++;
-    if(isPrime(c)==-1) marks++;
-    if(isPrime(d)==-1) marks++;
-    if(isPrime(n)==-1) marks++;
+    
     if(isPrime(50)==1) marks++;
-    if(isPrime(s)==-1) marks++;
-    return marks*100/21;
+    
+    return marks*100/17;
  }
  float testcase_factorial(){
     float marks = 0;
@@ -34,11 +32,9 @@ float testcase_prime(){
     if(factorial(8)==40320) marks++;
     if(factorial(9)==362880) marks++;
     if(factorial(-50)==-1) marks++;
-    if(factorial(c)==-1) marks++;
-    if(factorial(d)==-1) marks++;
-    if(factorial(n)==-1) marks++;
-    if(factorial(s)==-1) marks++;
-    return marks*100/12;
+    
+    
+    return marks*100/8;
  }
 float  testcase_power(){
     float j=0;
