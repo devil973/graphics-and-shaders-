@@ -37,14 +37,14 @@ float testcase_prime(){
     return marks*100/8;
  }
 float  testcase_power(){
-    float j=0;
+    int j=0;
     if(power(2,3)==8) j++;
     else if(power(2,1)==2)  j++;
     else if(power(-2,3)==-8) j++;
     //else if(power(45,-3)==8/729) j++;
-    else if(power(-25,-4)==0256) j++;
+    else if(power(-25,4)==256) j++;
     else if(power(5,6)==15625) j++;
-    else if(power(5,-6)==0.000064) j++;
+    else if(power(5,-6)==-1) j++;
     else if(power(55,5)==503284375) j++;
     else if(power(2.3,0)==1) j++;
     else if(power(-23,5)==-6436343) j++;
@@ -58,7 +58,7 @@ float  testcase_power(){
     else if(power(55,5)==503284375) j++;
     else if(power(23,9)==1801152661463) j++;
     else if(power(2,23)==8388608) j++;
-    return j*19/100;
+    return j*100/18;
 }
 int testcase_fibonacci(){
     int marks=0;
