@@ -62,7 +62,7 @@ float  testcase_power(){
     else if(power(5.5,5)==5032.84375) j++;
     else if(power(2.3,9)==1801.152661463) j++;
     else if(power(2,23)==8388608) j++;
-    return j;
+    return j*5;
 }
 int testcase_fibonacci(){
     int marks=0;
