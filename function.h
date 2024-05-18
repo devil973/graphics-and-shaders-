@@ -14,9 +14,9 @@ int fibonacci(int n) {
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-float power(float i, int j) {
-    if (j == 0) return 1;
-    if (j < 0) return -1; 
+double power(double i, int j) {
+    if (j == 0) return 1.0;
+    if (j < 0) return -1.0; 
     return i * power(i, j - 1);
 }
 
