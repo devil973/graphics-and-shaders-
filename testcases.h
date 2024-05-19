@@ -36,30 +36,30 @@ float testcase_prime(){
     
     return marks*100/8;
  }
-float  testcase_power(){
-    int j=0;
-    if(power(2,3)==8) j++;
-    else if(power(2,1)==2)  j++;
-    else if(power(-2,3)==-8) j++;
-    //else if(power(45,-3)==8/729) j++;
-    else if(power(-25,4)==256) j++;
-    else if(power(5,6)==15625) j++;
-    else if(power(5,-6)==-1) j++;
-    else if(power(55,5)==503284375) j++;
-    else if(power(2.3,0)==1) j++;
-    else if(power(-23,5)==-6436343) j++;
-    else if(power(2,3)==8) j++;
-    else if(power(7,6)== 117649) j++;
-    else if(power(-10,8)==100000000) j++;
-    else if(power(45,3)==91125) j++;
-    else if(power(-25,4)==390625) j++;
-    else if(power(57 ,6)==34296447249) j++;
-    else if(power(76,6)==192699928576) j++;
-    else if(power(55,5)==503284375) j++;
-    else if(power(23,9)==1801152661463) j++;
-    else if(power(2,23)==8388608) j++;
-    return j*100/18;
+float testcase_power() {
+    int j = 0;
+    if (power(2, 3) == 8) j++;
+    if (power(2, 1) == 2) j++;
+    if (power(2, 4) == 16) j++;
+    if (power(25, 4) == 390625) j++;
+    if (power(5, 6) == 15625) j++;
+    if (power(5, -6) == -1) j++;
+    if (power(55, 5) == 503284375) j++;
+    if (power(2.3, 0) == 1) j++;
+    if (power(-23, 5) == -6436343) j++;
+    if (power(2, 3) == 8) j++;
+    if (power(7, 6) == 117649) j++;
+    if (power(-10, 8) == 100000000) j++;
+    if (power(45, 3) == 91125) j++;
+    if (power(-25, 4) == 390625) j++;
+    if (power(57, 6) == 34296447249) j++;
+    if (power(76, 6) == 192699928576) j++;
+    if (power(55, 5) == 503284375) j++;
+    if (power(23, 9) == 1801152661463) j++;
+    if (power(2, 23) == 8388608) j++;
+    return j * 100 / 19;
 }
+
 int testcase_fibonacci(){
     int marks=0;
     if(fibonacci(1)==1)marks++;
