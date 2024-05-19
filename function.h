@@ -13,11 +13,13 @@ int fibonacci(int n) {
     if (n == 1) return 1;
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
-
-long long int power(int i, int j) {
+double power(int i, int j) {
     if (j == 0) return 1;
-    if (j < 0) return -1; 
-    return i * power(i, j - 1);
+    else if(j==1) return i;
+    else if (j < 0) return -1; 
+    else{
+        return i * power(i, j - 1);
+}
 }
 
 int isPrime(int n) {
